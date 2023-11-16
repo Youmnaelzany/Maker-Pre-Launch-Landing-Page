@@ -22,8 +22,12 @@ body {
   color: var(--white-clr);
 }
 
+img {
+  display: inline-block;
+}
+
 /* Header */
-.header .container {
+.header-container {
   margin: 3em 8em;
 }
 
@@ -32,6 +36,65 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2em;
+}
+
+/* cons Section */
+.cons {
+  margin-top: 10em;
+}
+.cons-container {
+  margin: 0 10em;
+  display: flex;
+  gap: 2em;
+  align-items: space-between;
+}
+
+.box-one,
+.box-three {
+  align-self: flex-start;
+  margin-bottom: 5em;
+}
+.box-two,
+.box-four {
+  align-self: center;
+  margin-top: 5em;
+}
+.cons-box {
+  display: flex;
+  flex-direction: column;
+}
+.cons-img-box {
+  position: relative;
+  width: 10rem;
+  height: 10.25rem;
+  background: #093f68;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+}
+
+.cons-img-box img {
+  position: absolute;
+  bottom: 2em;
+  right: 1.5em;
+}
+
+/* Pricing */
+
+.pricing {
+  margin-top: 10em;
+}
+
+.flex-container {
+  display: flex;
+  gap: 2em;
+  margin-top: 6em;
+}
+.card-one,
+.card-two {
+  padding: 4em;
 }
 
 /* Utility Classes */
@@ -114,13 +177,24 @@ body {
 .regal-blue-clr {
   color: var(--regal-blue-clr);
 }
+.bg-regal-blue-clr {
+  background: var(--regal-blue-clr);
+}
 
 .scrunchie-clr {
   color: var(--scrunchie-clr);
 }
+.bg-scrunchie-clr {
+  background: var(--scrunchie-clr);
+}
+
 .radical-red-clr {
   color: var(--radical-red-clr);
 }
 .white-clr {
   color: var(--white-clr);
+}
+
+.w-60 {
+  width: 15rem;
 }
