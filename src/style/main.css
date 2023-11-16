@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ebony-clr: #080c20;
+  --waterloo-clr: #777f98;
+  --regal-blue-clr: #093f68;
+  --scrunchie-clr: #3ee9e5;
+  --radical-red-clr: #ff2965;
+  --white-clr: #ffffff;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  background-color: var(--ebony-clr);
+  color: var(--white-clr);
+}
+
+/* Header */
+.header .container {
+  margin: 3em 8em;
+}
+
+/* Hero */
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+/* Utility Classes */
+.content {
+  --gap: clamp(1rem, 6vw, 3rem);
+  --full: minmax(var(--gap), 1fr);
+  --content: min(50ch, 100% - var(--gap) * 2);
+  --popout: minmax(0, 2rem);
+  --feature: minmax(0, 5rem);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--full)
+    [feature-start] var(--feature)
+    [popout-start] var(--popout)
+    [content-start] var(--content) [content-end]
+    var(--popout) [popout-end]
+    var(--feature) [feature-end]
+    var(--full) [full-end];
+}
+.content > * {
+  grid-column: content;
+}
+.popout {
+  grid-column: popout;
+}
+.feature {
+  grid-column: feature;
+}
+.full {
+  grid-column: full;
+}
+
+/* Text */
+.text-xxl {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  margin: 40px 0 20px;
+}
+.text-xl {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 40px 0 20px;
+}
+.text-lg {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 30px 0 20px;
+}
+.text-md {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 20px 0 10px;
+}
+.text-sm {
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  margin: 10px 0 5px;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Colors */
+.ebony-clr {
+  color: var(--ebony-clr);
+}
+.waterloo-clr {
+  color: var(--waterloo-clr);
+}
+.regal-blue-clr {
+  color: var(--regal-blue-clr);
+}
+
+.scrunchie-clr {
+  color: var(--scrunchie-clr);
+}
+.radical-red-clr {
+  color: var(--radical-red-clr);
+}
+.white-clr {
+  color: var(--white-clr);
+}
