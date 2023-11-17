@@ -9,3 +9,10 @@
   margin: 0;
   padding: 0;
 }
+
+.hero-text {
+  background: url(../../build/assets/images/bg-hero-squiggle.svg) no-repeat;
+  background-position: center;
+  background-size: top contain;
+  z-index: 5;
+}

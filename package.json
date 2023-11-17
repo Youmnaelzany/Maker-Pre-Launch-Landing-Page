@@ -4,7 +4,8 @@
   "description": "Maker Pre-Launch Landing Page -- Frontend Mentor Project -- Junior",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/style/main.css -o ./build/style/output.css --watch" 
+    "tailwind": "npx tailwindcss -i ./src/style/main.css -o ./build/style/output.css --watch",
+    "prettier": "npx prettier --write **/*.html"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
+    "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.5"
   }
 }
